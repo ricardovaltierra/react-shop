@@ -1,16 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../styles/global.css';
+// containers
 import Layout from '../containers/Layout';
-import Login from '../containers/Login';
-import CreateNewPassword from '../containers/CreateNewPassword';
-import SuccessMailRecovery from '../containers/SuccessMailRecovery';
+// pages
+import Checkout from '../pages/Checkout';
 import CreateAccount from '../containers/CreateAccount';
-import AccountInfo from '../containers/AccountInfo';
-import Catalog from '../containers/Catalog';
-import Menu from '../containers/Menu';
 import Home from '../pages/Home';
+import Login from '../containers/Login';
+import MyAccount from '../pages/MyAccount';
+import NewPassword from '../pages/NewPassword';
 import NotFound from '../pages/NotFound';
+import Orders from '../pages/Orders';
+import PasswordRecovery from '../pages/PasswordRecovery';
+import SendEmail from '../pages/SendEmail';
 
 const App = () => {
   return(
@@ -19,12 +22,13 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/create-account" element={<CreateAccount />} />
-          <Route exact path="/new-password" element={<CreateNewPassword />} />
-          <Route exact path="/account-info" element={<AccountInfo />} />
-          <Route exact path="/menu" element={<Menu />} />
-          <Route exact path="/recovery-mail-success" element={<SuccessMailRecovery />} />
-          <Route exact path="/catalog" element={<Catalog />} />
+          <Route exact path="/password-recovery" element={<PasswordRecovery />} />
+          <Route exact path="/send-email" element={<SendEMail />} />
+          <Route exact path="/new-password" element={<NewPassword />} />
+          <Route exact path="/my-account" element={<MyAccount />} />
+          <Route exact path="/create-account"  element={<CreateAccount />} />
+          <Route exact path="/checkout" element={<Checkout />} />
+          <Route exact path="/orders" element={<Orders />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
