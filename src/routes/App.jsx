@@ -4,12 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 // pages
 import Home from '../pages/Home';
-import Login from '../containers/Login';
+import Login from '../pages/Login';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import SendEmail from '../pages/SendEmail';
 import NewPassword from '../pages/NewPassword';
 import MyAccount from '../pages/MyAccount';
-import CreateAccount from '../containers/CreateAccount';
+import CreateAccount from '../pages/CreateAccount';
 import Checkout from '../pages/Checkout';
 import Orders from '../pages/Orders';
 import NotFound from '../pages/NotFound';
