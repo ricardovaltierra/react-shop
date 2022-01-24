@@ -1,8 +1,15 @@
 import React from 'react';
+import ProductInfo from '../components/ProductInfo';
+import '../styles/ProductDetail.scss';
 
 const ProductDetail = () => {
   return(
-    <h1>This is the Product Detail container!</h1>
+    <aside className="ProductDetail">
+      <div className="ProductDetail-close">
+        <img src="./icons/icon_close.png" alt="close" />
+      </div>
+      <ProductInfo />
+    </aside>
   );
 }
 
