@@ -6,7 +6,7 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 
 const Header = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
