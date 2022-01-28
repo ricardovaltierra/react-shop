@@ -13,6 +13,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
+      '@context': path.resolve(__dirname, 'src/context/'),
       '@hooks': path.resolve(__dirname, 'src/hooks/'),
       '@components': path.resolve(__dirname, 'src/components/'),
       '@containers': path.resolve(__dirname, 'src/containers/'),
